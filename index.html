@@ -12,13 +12,17 @@
 
     <form id="survey-form">
         <label for="name">Name</label><br>
-        <input id="name" type="text" placeholder="Enter your name" name="name"><br>
+        <input id="name" type="text" placeholder="Enter your name" required name="name"><br>
+
         <label for="email">Email</label><br>
-        <input id="email" type="email" placeholder="Enter your email" name="email"><br>
+        <input id="email" type="email" placeholder="Enter your email" required name="email"><br>
+
         <label for="age">Age(optional)</label><br>
         <input id="age" type="number" placeholder="Age" name="age"><br>
-        <label for="role">Which option best describes your current role</label><br>
-        <select id="role" aria-placeholder="Select current role" name="role">
+
+
+        <p for="dropdown">Which option best describes your current role</p><br>
+        <select id="dropdown" aria-placeholder="Select current role" name="role">
             <option value="student">Student</option>
             <option value="full time job">Full Time Job</option>
             <option value="full time learner">Full Time Learner</option>
@@ -26,13 +30,73 @@
             <option value="other">Other</option>
         </select><br>
 
-        <label>Will your recommend freecodecamp to a friend</label><br>
+        <p>Will your recommend freeCodeCamp to a friend</p><br>
+
          <input type="radio" name="definitely" value="definitely">
          <label for="definitely">Definitely</label><br>
+
          <input type="radio" name="maybe" value="maybe">
          <label for="maybe">Maybe</label><br>
+
          <input type="radio" name="not sure" value="not sure">
-         <label for="not sure">Not sure</label>
+         <label for="not sure">Not sure</label><br>
+
+         <label for="feature">What is your favourite feature of freeCodeCamp?</label><br>
+         <select id="dropdown" aria-placeholder="Select an option" name="feature">
+             <option value="challenges">Challenges</option>
+             <option value="projects">Projects</option>
+             <option value="community">Community</option>
+             <option value="open source">Open source</option>
+         </select><br>
+
+         <div class="form-section">
+         <p>What would you like to improve? <span>(check all that apply)</span></p><br>
+
+         <input type="checkbox" name="select" value="front-end projects" class="input-checkbox">
+         <label for="front-end">Front-end Projects</label><br>
+
+         <input type="checkbox" name="select" value="back-end projects" class="input-checkbox">
+         <label for="back-end">Back-end Projects</label><br>
+
+         <input type="checkbox" name="select" value="data visualization" class="input-checkbox">
+         <label for="data visualization">Data Visualization</label><br>
+
+         <input type="checkbox" name="select" value="challenges" class="input-checkbox">
+         <label for="challenges">Challenges</label><br>
+
+         <input type="checkbox" name="select" value="open source community" class="input-checkbox">
+         <label for="open source community">Open Source Community</label><br>
+
+         <input type="checkbox" name="select" value="gitter help rooms" class="input-checkbox">
+         <label for="gitter help rooms">Gitter Help Rooms</label><br>
+
+         <input type="checkbox" name="select" value="videos" class="input-checkbox">
+         <label for="videos">Videos</label><br>
+
+         <input type="checkbox" name="select" value="city meetups" id="input-checkbox">
+         <label for="city meetups">City Meetups</label><br>
+
+         <input type="checkbox" name="select" value="wiki" class="input-checkbox">
+         <label for="wiki">Wiki</label><br>
+
+         <input type="checkbox" name="select" value="forum" class="input-checkbox">
+         <label for="forum">Forum</label><br>
+
+         <input type="checkbox" name="select" value="Additional resources" class="input-checkbox">
+         <label for="additional resources">Additional Resources</label>
+         </div>
+
+         <div class="form-section">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+      
+          <div class="form-section">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+
 
 
 
