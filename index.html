@@ -7,6 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1 id="title">Freecodecamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <label for="name">Name</label><br>
+        <input id="name" type="text" placeholder="Enter your name" name="name"><br>
+        <label for="email">Email</label><br>
+        <input id="email" type="email" placeholder="Enter your email" name="email"><br>
+        <label for="age">Age(optional)</label><br>
+        <input id="age" type="number" placeholder="Age" name="age"><br>
+        <label for="role">Which option best describes your current role</label><br>
+        <select id="role" aria-placeholder="Select current role" name="role">
+            <option value="student">Student</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="full time learner">Full Time Learner</option>
+            <option value="prefer not to say">Prefer Not To Say</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label>Will your recommend freecodecamp to a friend</label><br>
+         <input type="radio" name="definitely" value="definitely">
+         <label for="definitely">Definitely</label><br>
+         <input type="radio" name="maybe" value="maybe">
+         <label for="maybe">Maybe</label><br>
+         <input type="radio" name="not sure" value="not sure">
+         <label for="not sure">Not sure</label>
+
+
+
+
+    </form>
 </body>
 </html>
